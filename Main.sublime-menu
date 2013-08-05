@@ -1,0 +1,32 @@
+[
+    {
+        "caption": "Scribe Inc.",
+        "id": "scribe",
+        "children":
+        [
+            {
+                "caption": "Display",
+                "mnemonic": "D",
+                "id": "scribe_display",
+                "children": [
+                    {
+                        "caption": "Show Trailing Spaces",
+                        "command": "toggle_trailing_spaces",
+                        "checkbox": true
+                    }
+                ]
+            },
+            {
+                "caption": "Utilities",
+                "mnemonic": "U",
+                "id": "scribe_utilities",
+                "children": [
+                    {
+                        "caption": "Delete Trailing Spaces",
+                        "command": "delete_trailing_spaces"
+                    }
+                ]
+            }
+        ]
+    }
+]

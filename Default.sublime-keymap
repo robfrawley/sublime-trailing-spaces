@@ -1,0 +1,10 @@
+[
+    {
+        "keys": ["ctrl+alt+y"],
+        "command": "toggle_trailing_spaces"
+    },
+    {
+        "keys": ["ctrl+alt+g"],
+        "command": "delete_trailing_spaces"
+    }
+]

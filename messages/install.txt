@@ -1,0 +1,9 @@
+SCRIBE: TRAILING SPACES
+=======================
+
+Description:
+	This package allow for automatic highlighting of trailing spaces
+	as well as a function to delete all trailing spaces
+
+Usage: 
+	- Use the entries under "Scribe Inc." top-level menu
