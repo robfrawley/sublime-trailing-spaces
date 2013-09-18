@@ -5,18 +5,6 @@
         "children":
         [
             {
-                "caption": "Display",
-                "mnemonic": "D",
-                "id": "scribe_display",
-                "children": [
-                    {
-                        "caption": "Show Trailing Spaces",
-                        "command": "toggle_trailing_spaces",
-                        "checkbox": true
-                    }
-                ]
-            },
-            {
                 "caption": "Utilities",
                 "mnemonic": "U",
                 "id": "scribe_utilities",
