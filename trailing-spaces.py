@@ -4,13 +4,6 @@ import codecs
 
 
 #
-# some variables
-#
-ts_settings_filename = "trailing-spaces.sublime-settings"
-ts_settings = None
-
-
-#
 # when api ready called by st3, called manually when using st2
 #
 def plugin_loaded():
@@ -24,7 +17,7 @@ def plugin_loaded():
 def find_trailing_spaces(view):
     sel = view.sel()[0]
     line = view.line(sel.b)
-    regexp = ts_settings.get("trailing_spaces_regexp") + "$"
+    regexp = "[ \t]+" + "$"
     offending_lines = view.find_all(regexp)
 
     return offending_lines
