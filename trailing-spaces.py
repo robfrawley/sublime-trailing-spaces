@@ -4,14 +4,6 @@ import codecs
 
 
 #
-# when api ready called by st3, called manually when using st2
-#
-def plugin_loaded():
-    global ts_settings_filename, ts_settings
-    ts_settings = sublime.load_settings(ts_settings_filename)
-
-
-#
 # find any trailing space regions
 #
 def find_trailing_spaces(view):
@@ -64,11 +56,3 @@ class DeleteTrailingSpacesCommand(sublime_plugin.TextCommand):
             message = "No trailing spaces to delete!"
 
         sublime.status_message(message)
-
-
-#
-# st3 utalizes a plugin_loaded hook which must be called manually in ST2
-#
-if not int(sublime.version()) > 3000:
-
-    plugin_loaded()
